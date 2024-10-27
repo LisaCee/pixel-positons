@@ -26,7 +26,7 @@
 
         <section>
             <x-section-heading>Recent Jobs</x-section-heading>
-
+            <x-job-row/>
         </section>
     </div>
 </x-layout>
