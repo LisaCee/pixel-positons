@@ -1,20 +1,23 @@
-<div class="p-4 bg-white/5 rounded-xl flex flex-row gap-6 items-start">
-    <img src="https://picsum.photos/80" alt="" class="rounded-xl">
-    <div class="flex justify-between mt-auto grow">
-        <div class="flex flex-col gap-3">
-            <div class="font-light text-sm text-white/80">Name</div>
-            <h3 class="font-bold text-lg">Producer</h3>
-            <p class="font-light text-sm text-white/80">Full Time - From $60,000</p>
+<x-panel class="flex gap-x-6">
+    <div>
+        <x-employer-logo/>
+    </div>
+
+    <div class="flex-1 flex flex-col">
+        <a href="" class="self-start text-sm text-gray-400 ">Employer</a>
+        <h3 class="font-bold text-xl mt-2 group-hover:text-blue-600 transition-colors duration-300">Job title</h3>
+
+        <p class="text-sm text-gray-400 mt-auto">Full Time - From $60,000</p>
+    </div>
+
+    <div class="flex flex-col justify-between align-bottom">
+        <div class="flex gap-3 justify-end">
+            <x-detail>Tag</x-detail>
         </div>
-        <div class="flex flex-col justify-between align-bottom">
-            <div class="flex gap-3 justify-end">
-                <x-detail>Tag</x-detail>
-            </div>
-            <div class="flex gap-3">
-                <x-tag>Tag</x-tag>
-                <x-tag>Tag</x-tag>
-                <x-tag>Tag</x-tag>
-            </div>
+        <div class="flex gap-3">
+            <x-tag>Tag</x-tag>
+            <x-tag>Tag</x-tag>
+            <x-tag>Tag</x-tag>
         </div>
     </div>
-</div>
+</x-panel>
