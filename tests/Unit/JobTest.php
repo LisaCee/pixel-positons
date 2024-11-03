@@ -17,3 +17,9 @@ it('has a title', function() {
     $job = Job::factory()->create(['title' => 'Test Job']);
     expect($job->title)->toBe('Test Job');
 });
+
+it('can have tags', function() {
+    $job = Job::factory()->create();
+    $job->tag('Front end');
+    expect($job->tags)->toHaveCount(1);
+});
