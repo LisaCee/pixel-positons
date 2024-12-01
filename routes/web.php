@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\EmployerController;
 use App\Http\Controllers\JobController;
 use App\Http\Controllers\RegisteredUserController;
 use App\Http\Controllers\SearchController;
@@ -14,6 +15,8 @@ Route::post('/jobs', [ JobController::class, 'store'])->middleware('auth');
 
 Route::get('/search', SearchController::class);
 Route::get('/tags/{tag:name}', TagController::class);
+
+Route::get('/employers', [EmployerController::class, 'index']);
 
 Route::middleware('guest')->group(function () {
     Route::get('/register', [RegisteredUserController::class, 'create']);
